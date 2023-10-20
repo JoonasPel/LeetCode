@@ -28,7 +28,7 @@ public class Program
       int deepnestLeft = Visit(node.left);
       int deepnestRight = Visit(node.right);
       tempDiameter = Math.Max(tempDiameter, deepnestLeft + deepnestRight);
-      return Math.Max(++deepnestLeft, ++deepnestRight);
+      return Math.Max(deepnestLeft, deepnestRight) + 1;
     }
 
     Visit(root);
