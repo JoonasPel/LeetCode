@@ -59,14 +59,8 @@ public class Solution
       }
       foreach (string domain in allDomains)
       {
-        if (visits.TryGetValue(domain, out int count))
-        {
-          visits[domain] = count + tempCount;
-        }
-        else
-        {
-          visits.Add(domain, tempCount);
-        }
+        visits.TryGetValue(domain, out int count);
+        visits[domain] = count + tempCount;
       }
     }
     IList<string> result = new List<string>();
