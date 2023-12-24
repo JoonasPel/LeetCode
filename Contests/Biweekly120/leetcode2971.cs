@@ -3,7 +3,7 @@ using System.Text;
 
 /*
 DIFFICULTY: Medium
-QUESTION: 10032. Find Polygon With the Largest Perimeter
+QUESTION: 2971. Find Polygon With the Largest Perimeter
 Q2 of Biweekly Contest 120. I did this during the contest.
 
 You are given an array of positive integers nums of length n.

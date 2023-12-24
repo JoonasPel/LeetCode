@@ -3,7 +3,7 @@ using System.Text;
 
 /*
 DIFFICULTY: Easy
-QUESTION: 10031. Count the Number of Incremovable Subarrays I
+QUESTION: 2970. Count the Number of Incremovable Subarrays I
 Q1 of Biweekly Contest 120. I did this during the contest.
 
 You are given a 0-indexed array of positive integers nums.
