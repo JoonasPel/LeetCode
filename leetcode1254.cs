@@ -44,11 +44,11 @@ public class Solution
       bool edgeFound = false;
       var toBeVisited = new Queue<(int, int)>();
       toBeVisited.Enqueue((i, j));
+      grid[i][j] = 1;
       int row, col;
       while (toBeVisited.Count > 0)
       {
         (row, col) = toBeVisited.Dequeue();
-        grid[row][col] = 1;
         VisitDirection(+1, 0);
         VisitDirection(-1, 0);
         VisitDirection(0, +1);
@@ -61,6 +61,7 @@ public class Solution
           if (grid[row + x][col + y] == 0)
           {
             toBeVisited.Enqueue((row + x, col + y));
+            grid[row + x][col + y] = 1;
           }
         }
         catch (IndexOutOfRangeException)
