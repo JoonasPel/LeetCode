@@ -19,11 +19,12 @@ public class Solution
 {
   public bool FindSubarrays(int[] n)
   {
-    HashSet<int>s=[];for(int i=0;i<n.Length-1;i++)if(!s.Add(n[i]+n[i+1]))return true;return false;
+    HashSet<int>s=[];for(int i=0;i<n.Length-1;)if(!s.Add(n[i]+n[++i]))return true;return false;
   }
 
   public static void Main()
   {
     Solution app = new Solution();
+    Console.WriteLine(app.FindSubarrays(new int[]{4,2,4}));
   }
 }
